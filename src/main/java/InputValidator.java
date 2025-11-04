@@ -11,7 +11,7 @@ public class InputValidator {
 
         while(true){
             if(this.input.hasNextInt()){
-                input.nextLine();
+                input.next();
                 return this.input.nextInt();
             }
             else{
@@ -31,6 +31,12 @@ public class InputValidator {
                 System.out.println("Invalid input, please enter a number");
                 input.next();
             }
+        }
+    }
+
+    public String getValidString(){
+        while(true){
+            return this.input.nextLine();
         }
     }
 }

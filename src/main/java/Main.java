@@ -7,6 +7,8 @@ public class Main {
         InputValidator input = new InputValidator(sc);
 
 
+        MenuHandler menuHandler = new MenuHandler();
+        menuHandler.mainMenu(input);
 
 
     }
